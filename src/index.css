@@ -1,0 +1,37 @@
+/*Applying media query for iPad-mini*/
+@media (max-width: 1030px) {
+    .main-div {
+        height: auto;
+        flex-direction: column;
+    }
+    .first-div {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    .inside-second-div {
+        margin-top: 2%;
+        width: 75%;
+        margin-left: 12%;
+    }
+    .div-1 {
+       display: grid;
+       grid-template-columns: auto auto auto;
+       grid-template-rows: auto auto;
+    }
+    .div-1-para {
+       margin-top: 0.25rem;
+    }
+}
+
+/*Applying media query for iPhone SE*/
+@media (max-width: 550px) {
+    .main-div {
+        height: auto;
+        display: inline-flex;
+     }
+     .inside-second-div {
+        margin-top: 2%;
+        width: 85%;
+        margin-left: 8%;
+    }
+}
