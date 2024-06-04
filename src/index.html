@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather Forecast Application Development in JavaScript</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-[url('background-img3.jpg')] bg-cover bg-center bg-no-repeat h-screen">
+    <header class="flex justify-center">
+        <div>
+            <img src="weather-icons/main-icon.png" alt="Website Icon">
+            <h1 class="font-bold text-xl mb-0">Weathery</h1>
+            <p class="mt-0"><em>Weather Forecast Application</em></p>
+        </div>
+    </header>
+    <main>
+        <div class="main-div mx-16 my-4 h-128 flex justify-evenly bg-black shadow-2xl shadow-black">
+            <div class="first-div text-center my-20">
+                <h2 class="text-cyan-50 text-2xl">Enter your city name</h2>
+                <input type="text" placeholder="e.g. New Dehli" class="search-box border border-black rounded-lg px-1 py-1 my-1"><br/>
+                <button class="search-btn bg-slate-300 px-1 border border-black rounded-lg hover:bg-red-950 hover:text-white">Search</button>
+                <div id="recent_cities_container" class="relative mt-0">
+                    <select id="recent_cities" class="absolute" style="display:none;" size="5">
+                        <!-- Options will be added dynamically -->
+                    </select>
+                </div>
+                <p class="text-white mt-2.5">or</p> 
+                <button class="current-locaton-btn bg-slate-300 px-1 border border-black rounded-lg hover:bg-red-950 hover:text-yellow-50 my-2.5">Your current location</button>
+            </div>
+            <div class="second-div my-2">
+                <div class="inside-second-div bg-white m-2 h-64 flex justify-evenly">
+                    <div class="mt-2">
+                        <img src="" alt="temp-icon" class="temp-icon mb-0 w-24 h-24 ml-2">
+                        <p class="img-para mt-0 text-center font-bold"></p>
+                        <p class="temperature text-5xl text-center font-bold"></p>
+                        <p class="city text-2xl text-center font-bold"></p>
+                    </div>
+                    <div class="grid grid-cols-2 grid-rows-2">
+                        <div class="bg-transparent w-24 h-24 m-2 text-center shadow-2xl shadow-black">
+                            <p class="font-bold mt-2 mb-3">Wind Speed</p>
+                            <p class="wind-div font-semibold"></p>
+                        </div>
+                        <div class="bg-transparent w-24 h-24 m-2 text-center shadow-2xl shadow-black">
+                            <p class="font-bold mt-2 mb-3">Humidity</p>
+                            <p class="humidity-div font-semibold"></p>
+                        </div>
+                        <div class="bg-transparent w-24 h-24 m-2 text-center shadow-2xl shadow-black">
+                            <p class="font-bold mt-2 mb-3">Visibility</p>
+                            <p class="visibility-div font-semibold"></p>
+                        </div>
+                        <div class=" bg-transparent w-24 h-24 m-2 text-center shadow-2xl shadow-black">
+                            <p class="font-bold mt-2 mb-3">Pressure</p>
+                            <p class="pressure-div font-semibold"></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-white mt-3 text-xl">5-Days forecast</p>
+                <div class="flex">
+                    <div class="next-1-div bg-green-300 w-32 h-36 m-2 border-2 border-white transition ease-in-out hover:-translate-y-1 hover:scale-125">
+                        <p class="date1 font-bold text-xl mb-2">Tomorrow</p>
+                        <img src="" class="next-1-img w-6 h-6 ml-10">
+                        <p class="temp1 font-bold"></p>
+                        <p class="wind1 font-bold"></p>
+                        <p class="humidity1 font-bold"></p>
+                    </div>
+                    <div class="next-2-div bg-green-300 w-32 h-36 m-2 border-2 border-white transition ease-in-out hover:-translate-y-1 hover:scale-125">
+                        <p class="date2 font-bold text-xl mb-2"></p>
+                        <img src="" class="next-2-img w-6 h-6 ml-10">
+                        <p class="temp2 font-bold"></p>
+                        <p class="wind2 font-bold"></p>
+                        <p class="humidity2 font-bold"></p>
+                    </div>
+                    <div class="next-3-div bg-green-300 w-32 h-36 m-2 border-2 border-white transition ease-in-out hover:-translate-y-1 hover:scale-125">
+                        <p class="date3 font-bold text-xl mb-2"></p>
+                        <img src="" class="next-3-img w-6 h-6 ml-10">
+                        <p class="temp3 font-bold"></p>
+                        <p class="wind3 font-bold"></p>
+                        <p class="humidity3 font-bold"></p>
+                    </div>
+                    <div class="next-4-div bg-green-300 w-32 h-36 m-2 border-2 border-white transition ease-in-out hover:-translate-y-1 hover:scale-125">
+                        <p class="date4 font-bold text-xl mb-2"></p>
+                        <img src="" class="next-4-img w-6 h-6 ml-10">
+                        <p class="temp4 font-bold"></p>
+                        <p class="wind4 font-bold"></p>
+                        <p class="humidity4 font-bold"></p>
+                    </div>
+                    <div class="next-5-div bg-green-300 w-32 h-36 m-2 border-2 border-white transition ease-in-out hover:-translate-y-1 hover:scale-125">
+                        <p class="date5 font-bold text-xl mb-2"></p>
+                        <img src="" class="next-5-img w-6 h-6 ml-10">
+                        <p class="temp5 font-bold"></p>
+                        <p class="wind5 font-bold"></p>
+                        <p class="humidity5 font-bold"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
